@@ -1,28 +1,44 @@
 <!DOCTYPE HTML>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Flatiron Task Lister</title>
   <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
+
 <body>
   <div id="main-content">
     <h1>Task Lister Lite™️</h1>
-
-    <form id="create-task-form" action="" method="POST">
-      <label for="new-task-description">Task description:</label>
-      <input type="text" id="new-task-description" name="new-task-description" placeholder="description">
-      <input type="submit" value="Create New Task">
-    </form>
-
     <div id="list">
       <h2>My Todos:</h2>
       <ul id="tasks">
-      </ul>
     </div>
 
+    <form id="create-task-form" action="#" method="POST">
+      <label for="new-task-description">Task description:</label>
+      <p id="addTask"> <b><u> Tasks </u></b> </p>
+      <input type='text' id='inputTask' />
+
+      <select id="priority">
+        <option id="Red">High</option>
+        <option id="Yellow">Low</option>
+        <option id="Green">Medium</option>
+      </select>
+      <input type='button' onclick='addText()' value="Create New Task" />
+
+    </form>
     <script src="./src/index.js"></script>
   </div>
+  <label for="start">Start date:</label>
+
+  <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+  <label for="start">User name:</label>
+  <input type="name" id="start" name="trip-start" value="" first="" last="">
+  <label for="start">Duration taken:</label>
+  <input type="date" id="start" name="trip-start" value="Annually" min="2023-01-01" max="2018-12-31">
 
 </body>
+
 </html>
